@@ -1,13 +1,19 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - start point
- * Description - functions
+ * main - start point prints putchar
  * Return: always 0
  */
-#include <stdio.h>
-
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
