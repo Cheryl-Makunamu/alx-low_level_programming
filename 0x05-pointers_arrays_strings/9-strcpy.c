@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * *_strcpy - copies string pointed by src
+ * @dest: check paameter
+ * @src: check parameter
+ * Return: dest_start..
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -18,5 +19,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	*dest = '\0';
 
-	return dest_start;
+	return (dest_start);
 }
