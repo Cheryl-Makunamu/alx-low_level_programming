@@ -7,7 +7,7 @@
  * @argc: the no of arguments 
  * Return: Always zero.
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int i;
 
