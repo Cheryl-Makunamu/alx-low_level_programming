@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * argstostr - function that concatenates arguments 
@@ -10,10 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	int d = 0;
+	int a = 0, b = 0, c = 0, d = 0;
 	char *s;
 
 	if (ac == 0 || av == NULL)
