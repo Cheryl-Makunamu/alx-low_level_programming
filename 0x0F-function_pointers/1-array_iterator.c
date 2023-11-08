@@ -2,8 +2,8 @@
 
 /**
  * array_iterator - executes a function given as a parameter
- * @size: arrays size
- * @action; pointer to function array_iterator
+ * @size: arrays sizei
+ * @action: pointer to the function
  * @array: the array
  * Return: zero
  */
