@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	int a = 0;
-	char *s, *sep = "";
+	char *str, *sep = "";
 
 	va_list list;
 
@@ -30,11 +30,11 @@ void print_all(const char * const format, ...)
 				case 'f':
 					printf("%s%f", sep, va_arg(list, double));
 					break;
-				case 'b':
-					s = va_arg(list, char *);
-					if (!s)
-						s = "nil";
-					printf("%s%s", sep, s);
+				case 's':
+					str = va_arg(list, char *);
+					if (!str)
+						str = "nil";
+					printf("%s%s", sep, str);
 					break;
 				default:
 					a++;
@@ -45,7 +45,5 @@ void print_all(const char * const format, ...)
 		}
 	}
 	va_end(list);
+	printf("\n");
 }
-				
-					
-
