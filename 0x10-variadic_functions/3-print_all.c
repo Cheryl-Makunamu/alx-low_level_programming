@@ -25,16 +25,16 @@ void print_all(const char * const format, ...)
 					printf("%s%c", sep, va_arg(list, int));
 					break;
 				case 'd':
-					printf("%s%d", sep, va-arg(list, int));
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
 					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 'b':
-					s = va_arg(list, char*);
+					s = va_arg(list, char *);
 					if (!s)
 						s = "nil";
-					printf("%s%b", sep, char *);
+					printf("%s%s", sep, s);
 					break;
 				default:
 					a++;
@@ -44,6 +44,7 @@ void print_all(const char * const format, ...)
 			a++;
 		}
 	}
+	va_end(list);
 }
 				
 					
