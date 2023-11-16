@@ -4,10 +4,9 @@
 
 /**
  * add_node - adds a new node at the beginning of a linked list
- * @head: double pointer to the list_t
- * @str: new string to 
- *
- * Return: the address of the new element
+ * @head: pointer to the list_t
+ * @str: new string to
+ * Return: the address of element
  */
 list_t *add_node(list_t **head, const char *str)
 {
