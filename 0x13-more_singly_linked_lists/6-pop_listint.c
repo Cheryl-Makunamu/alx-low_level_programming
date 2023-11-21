@@ -6,7 +6,6 @@
  * @head: pointer to the first element
  *
  * Return: the head node’s data (n)
- * 
  */
 int pop_listint(listint_t **head)
 {
