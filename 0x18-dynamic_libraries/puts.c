@@ -1,10 +1,17 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * print_message - Prints a predefined message
- * Return: zero if true
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
  */
-void print_message(void)
+void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
+
